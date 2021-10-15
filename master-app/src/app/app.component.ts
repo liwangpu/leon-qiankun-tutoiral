@@ -33,18 +33,18 @@ export class AppComponent implements OnInit {
     public ngOnInit(): void {
         registerMicroApps(
             [
-                // {
-                //     name: 'ng-app', // app name registered
-                //     entry: '//localhost:8902',
-                //     container: '#ng-app-container',
-                //     activeRule: '/ng-app',
-                // },
                 {
-                    name: 'normal-app', // app name registered
-                    entry: '//localhost:5500/normal-app',
+                    name: 'ng-app', // app name registered
+                    entry: '//localhost:8902',
                     container: '#ng-app-container',
                     activeRule: '/ng-app',
-                }
+                },
+                // {
+                //     name: 'normal-app', // app name registered
+                //     entry: '//localhost:5500/normal-app',
+                //     container: '#ng-app-container',
+                //     activeRule: '/ng-app',
+                // }
             ],
             {
                 // qiankun 生命周期钩子 - 加载前

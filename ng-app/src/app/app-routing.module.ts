@@ -4,8 +4,8 @@ import { HomeComponent } from './components/home/home.component';
 import { APP_BASE_HREF } from '@angular/common';
 
 const routes: Routes = [
-    { path: 'home', component: HomeComponent },
-    { path: '**', redirectTo: 'home' },
+    // { path: 'home', component: HomeComponent },
+    // { path: '**', redirectTo: 'home' },
 ];
 
 @NgModule({
