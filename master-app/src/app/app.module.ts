@@ -15,6 +15,7 @@ import { NzButtonModule } from 'ng-zorro-antd/button';
 import { IconDefinition } from '@ant-design/icons-angular';
 import { MenuFoldOutline, MenuUnfoldOutline } from '@ant-design/icons-angular/icons';
 import { NzIconModule } from 'ng-zorro-antd/icon';
+import { NgAppComponent } from './components/ng-app/ng-app.component';
 
 registerLocaleData(zh);
 
@@ -23,7 +24,8 @@ const icons: Array<IconDefinition> = [MenuFoldOutline, MenuUnfoldOutline];
 @NgModule({
     declarations: [
         AppComponent,
-        HomeComponent
+        HomeComponent,
+        NgAppComponent
     ],
     imports: [
         BrowserModule,
