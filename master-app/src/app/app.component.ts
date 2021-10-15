@@ -33,20 +33,18 @@ export class AppComponent implements OnInit {
     public ngOnInit(): void {
         registerMicroApps(
             [
-                {
-                    name: 'ng-app', // app name registered
-                    entry: '//localhost:8902',
-                    container: document.getElementById('ng-app-container'), // 标签id
-                    activeRule: genActiveRule('#/ng-app'),
-                    props: { microName: '我是父应用呀!', micro: 'micro' },
-                },
                 // {
-                //   name: 'AngularMicroApp', // app name registered
-                //   entry: '//localhost:4300',
-                //   container: '#angular_micro',
-                //   activeRule: genActiveRule('/one'),
-                //   props: { microName: '我是父应用呀!' },
+                //     name: 'ng-app', // app name registered
+                //     entry: '//localhost:8902',
+                //     container: '#ng-app-container',
+                //     activeRule: '/ng-app',
                 // },
+                {
+                    name: 'normal-app', // app name registered
+                    entry: '//localhost:5500/normal-app',
+                    container: '#ng-app-container',
+                    activeRule: '/ng-app',
+                }
             ],
             {
                 // qiankun 生命周期钩子 - 加载前
@@ -77,6 +75,8 @@ export class AppComponent implements OnInit {
                 console.error("微应用加载失败，请检查应用是否可运行");
             }
         });
+
+        start();
     }
 
     public toggleCollapsed(): void {
