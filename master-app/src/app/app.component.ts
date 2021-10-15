@@ -1,5 +1,6 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { addGlobalUncaughtErrorHandler, loadMicroApp, registerMicroApps, start } from 'qiankun';
+console.log('qiankun');
 
 const menuCollapseStatusKey = 'menuCollapseStatus';
 
